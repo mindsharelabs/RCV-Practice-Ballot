@@ -1,0 +1,238 @@
+$primary:       #4944CD;
+$secondary:     #4580FF;
+
+$danger:        #C93E2C;
+$warning:       #EAA84E;
+$success:       #60AF48;
+
+$dark:          #252524;
+
+.ballot-block {
+  .interaction-container {
+    .btn {
+      margin-bottom: 15px;
+      padding: 8px 10px;
+      font-size: .8em;
+    }
+  }
+}
+#practiceBallot {
+  margin: 0 auto;
+  color: $dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .ballot-table-responsive {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+
+  table.practice-ballot {
+    margin: 0 auto;
+    thead {
+      border-bottom: 0;
+      border-top: 0;
+      background: rgba(255,255,255,.6);
+      th {
+        line-height: 1em;
+        font-weight: 400;
+        font-size: 16px;
+        font-style: italic;
+        color: $dark;
+        border: 0;
+        &.rank {
+          text-align: center;
+          min-width: 60px;
+        }
+      }
+    }
+    tbody {
+      background: rgba(255,255,255,.3);
+      tr {
+        background-color: transparent;
+        border: none;
+        &:nth-of-type(odd) {
+
+        }
+        &.warning {
+          background-color: lighten($warning, 20%);
+        }
+
+        td {
+          background-position: top center;
+          background-repeat: no-repeat;
+          background-size: 30px;
+          border: none;
+          padding-right: 2px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          padding-left: 2px;
+          &.names {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            font-weight: bold;
+            .name-cont {
+              display: flex;
+              flex-direction: row;
+              span.name {
+              }
+              span.image {
+                padding: 0;
+
+              }
+            }
+
+
+          }
+          &.option {
+            padding: 0;
+            position: relative;
+            span {
+              display: block;
+              min-height: 50px;
+              width: auto;
+              background-image: url('../../img/circle.svg');
+
+              background-size: 35px;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+            &.vote {
+              span {
+                background-image: url('../../img/circle-checked.svg');
+              }
+            }
+          }
+          &.name {
+            min-width: 200px;
+          }
+          &.error {
+            background-color: lighten($danger, 20%);
+          }
+          &.warning {
+            background-color: lighten($warning, 20%);
+          }
+          &.success {
+            background-color: lighten($success, 20%);
+          }
+        }
+
+
+
+      }
+
+    }
+
+  }
+}
+#ballotFeedback {
+  .alert {
+    text-align: left;
+    line-height: 1.1em;
+    background-color: rgba(255, 255, 255, .3);
+    &.warnings {
+      padding: 5px 10px;
+
+      border: 2px solid darken($warning, 10%);
+      margin-bottom: 5px;
+    }
+    &.error {
+
+      padding: 5px 10px;
+      border: 2px solid darken($danger, 10%);
+      margin-bottom: 5px;
+    }
+    &.success {
+
+      padding: 5px 10px;
+      border: 2px solid darken($success, 10%);
+      margin-bottom: 5px;
+      text-align: left !important;
+    }
+  }
+
+
+
+}
+#ballotFixes {
+  h5 {
+    margin-bottom: 8px;
+    color: lighten(#000, 20%);
+    span.warning {
+      color: $warning;
+      background-color: lighten($warning, 40%);
+      padding: 5px 7px;
+    }
+    span.error {
+      color: $danger;
+      background-color: lighten($danger, 25%);
+      padding: 5px 7px;
+    }
+  }
+
+}
+.candidate-showcase {
+  .candidate-slider {
+    .candidate-slide {
+
+      outline: none;
+      text-align: center;
+      img {
+        text-align: center;
+        margin: 0 auto;
+      }
+      .candidate-body {
+        h3 {
+          font-size: 20px;
+        }
+        h5 {
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+
+  }
+}
+
+
+
+.rcv-post-repeater {
+  background: $primary;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 25%, $primary 25%);
+  .card {
+    border-bottom: 4px solid $secondary;
+  }
+}
+
+.faq-accordion, .accordion {
+  .accordion-item {
+    margin-bottom: 20px;
+    border-bottom: rgba($dark, .125);
+
+    .accordion-button.collapsed {
+      border-bottom-width: 1px;
+    }
+  }
+}
+
+.team-repeater-block {
+  .card {
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
+  }
+  .team-member-card {
+    max-width: 20%;
+    padding: 10px;
+    .member-title {
+      h4 {
+        font-weight: 300;
+        // font-size: .9em;
+      }
+
+    }
+  }
+}

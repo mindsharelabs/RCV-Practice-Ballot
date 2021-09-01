@@ -1,0 +1,38 @@
+$primary:       #4944CD;
+$secondary:     #4580FF;
+
+$rtv_blue:      #4680FF;
+$rtv_ltblue:    #69BEE1;
+$rtv_violet:    #89396C;
+
+$dark:          #252524;
+
+
+
+@mixin transition($speed) {
+  -webkit-transition: all $speed ease;
+  -moz-transition: all $speed ease;
+  -ms-transition: all $speed ease;
+  -o-transition: all $speed ease;
+  transition: all $speed ease;
+}
+@mixin button-link {
+  border: 1px solid #fff;
+  border-left: 5px solid #fff;;
+  padding: 14px 25px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  @include transition(300ms);
+  &:hover {
+    border-left-width: 10px;
+    background-color: rgba(255,255,255,.6);
+    @include transition(100ms);
+  }
+}
+
+@import 'loading';
+@import 'block-styles';
+
+@import 'mobile';

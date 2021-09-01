@@ -1,0 +1,187 @@
+
+// XS styles - default: x <= 479px
+@media (max-width: 576px) {
+  #practiceBallot {
+    .ballot-table-responsive {
+      overflow-x: scroll;
+      padding-bottom: 25px;
+      .scroll-notice {
+        padding: 0 8px 8px;
+        font-size: .7em;
+        text-align: right;
+        position: absolute;
+        right: 8px;
+        display: block;
+        width: 100%;
+      }
+    }
+    table.practice-ballot {
+      tbody {
+        td {
+          &.names {
+            min-width: 200px;
+            .name-cont {
+              display: flex;
+              flex-direction: row;
+              span.name {
+                display: block;
+                font-size: 16px;
+                padding: 2px 2px 5px 5px;
+                flex-basis: 75%;
+              }
+              span.image {
+                display: block;
+                flex-basis: 25%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .candidate-slider {
+    .candidate-slide {
+      .candidate-body {
+        h3 {
+          font-size: 16px;
+        }
+        h5 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+// Small styles - default: 480px <= x <= 991px
+@media (min-width: 576px) and (max-width: 992px) {
+  #practiceBallot {
+    .ballot-table-responsive {
+      overflow-x: scroll;
+      .scroll-notice {
+        display: none
+      }
+    }
+    table.practice-ballot {
+      tbody {
+        td {
+          &.names {
+            min-width: 225px;
+            .name-cont {
+              span.name {
+                font-size: 18px;
+                padding: 2px 2px 5px 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .candidate-slider {
+    .candidate-slide {
+      .candidate-body {
+        h3 {
+          font-size: 18px;
+        }
+        h5 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// Medium styles - default: 992px <= x <= 1199px
+@media (min-width: 992px) and (max-width: 1200px) {
+  #practiceBallot {
+    .ballot-table-responsive {
+      overflow-x: scroll;
+      .scroll-notice {
+        display: none
+      }
+    }
+    table.practice-ballot {
+      tbody {
+        td {
+          &.names {
+            min-width: 250px;
+            .name-cont {
+              span.name {
+                font-size: 20px;
+                padding: 5px 5px 10px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .candidate-slider {
+    .candidate-slide {
+      .candidate-body {
+        h3 {
+          font-size: 20px;
+        }
+        h5 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Large styles - default: 1200px <= x
+@media (min-width: 1200px) {
+  #practiceBallot {
+    .ballot-table-responsive {
+      overflow-x: auto;
+      .scroll-notice {
+        display: none
+      }
+    }
+    table.practice-ballot {
+      tbody {
+        td {
+          &.names {
+            min-width: 300px;
+            .name-cont {
+              span.name {
+                font-size: 22px;
+                padding: 5px 5px 10px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .candidate-slider {
+    .candidate-slide {
+      .candidate-body {
+        h3 {
+          font-size: 22px;
+        }
+        h5 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.text-xs-left {
+  text-align: left;
+}
+
+.text-xs-right {
+  text-align: right;
+}
+
+.text-xs-center {
+  text-align: center;
+}
+
+.text-xs-justify {
+  text-align: justify;
+}
